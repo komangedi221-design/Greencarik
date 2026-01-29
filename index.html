@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ultimate Nature & Heritage Experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1f2937;
+      background: #f8fafc;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAVBAR */
+    header {
+      position: absolute;
+      width: 100%;
+      padding: 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      z-index: 10;
+    }
+    header nav a {
+      margin-left: 32px;
+      font-weight: 500;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url('foto/Desain\ tanpa\ judul.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 32px;
+      font-size: 18px;
+      opacity: .95;
+    }
+    .btn-group a {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-weight: 600;
+      margin: 0 8px;
+    }
+    .btn-primary { background: #16a34a; color: white; }
+    .btn-secondary { background: white; color: #1f2937; }
+
+    /* SECTION */
+    section { padding: 100px 60px; }
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 60px;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,.08);
+    }
+    .card img { width: 100%; height: 220px; object-fit: cover; }
+    .card-content { padding: 28px; }
+    .card h3 { margin-bottom: 12px; font-size: 22px; }
+    .card p { margin-bottom: 20px; color: #4b5563; }
+    .card a {
+      font-weight: 600;
+      color: #16a34a;
+    }
+
+    /* GUNUNG KAWI SECTION */
+    .gunungkawi {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('foto/1_gunung_kawi_temple.jpg') center/cover no-repeat;
+
+
+      color: white;
+      text-align: center;
+      padding: 140px 20px;
+    }
+    .gunungkawi p {
+      max-width: 800px;
+      margin: 0 auto 36px;
+      font-size: 18px;
+      opacity: .95;
+    }
+    .gunungkawi a {
+      display: inline-block;
+      background: #16a34a;
+      color: white;
+      padding: 16px 40px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+    }
+    footer h4 { margin-bottom: 16px; color: white; }
+    footer p { font-size: 14px; opacity: .9; }
+
+    @media (max-width: 768px) {
+      header { padding: 20px; }
+      section { padding: 80px 20px; }
+      .hero h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>GREEN CARIK </strong>
+  <nav>
+    <a href="Index.html">Home</a>
+    <a href="ziplinewahana/zipline.html">Adventure</a>
+    <a href="Restaurant/Restaurant.html">Dining</a>
+    <a href="Gunungkawi/gunungkawi.html">Heritage</a>
+    <a href="#contact">Contact</a>
+
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Experience the Soul of Bali</h1>
+    <p>Discover a perfect blend of high-adrenaline thrills, authentic local flavors, and the mystical whispers of ancient history.</p>
+    <div class="btn-group">
+      <a class="btn-primary" href="#">Start Your Journey</a>
+      <a class="btn-secondary" href="#">Book Experience</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Adventure & Flavors</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="foto/Desain tanpa judul.png" />
+      <div class="card-content">
+        <h3>Zipline & Jungle Swing</h3>
+        <p>Soar above the tropical canopy and feel the rush of freedom with breath-taking views of the valley.</p>
+        <a href="ziplinewahana/zipline.html">Explore Activities →</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="foto/DSC04639 (1).JPG" />
+      <div class="card-content">
+        <h3>Signature Dining</h3>
+        <p>Taste the finest Balinese-inspired cuisine, crafted from organic farm-to-table ingredients in a serene setting.</p>
+        <a href="Restaurant/Restaurant.html">View Menu →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gunungkawi">
+  <h2 class="section-title">The Mystic Gunung Kawi</h2>
+  <p>
+    Step back into the 11th century at this sacred temple complex. Carved into sheer cliff faces, 
+    it offers a profound <strong>spiritual atmosphere, rich history, and untouched natural beauty</strong>. 
+    A true sanctuary for those seeking peace and cultural enlightenment.
+  </p>
+  <a href="Gunungkawi/gunungkawi.html">Discover the History →</a>
+</section>
+
+<footer  id="contact">
+  <div>
+    <h4>About Us</h4>
+    <p>Dedicated to preserving Bali's heritage while providing world-class adventure and eco-tourism experiences.</p>
+  </div>
+  <div>
+    <h4>Quick Links</h4>
+    <p>Adventure</p>
+    <p>Dining</p>
+    <p>Heritage</p>
+  </div>
+
+
+  <div>
+    <h4>Get In Touch</h4>
+    <p>Instagram : Greencarik_ofc</p>
+    <p>WhatsApp: +6281238834569</p>
+  </div>
+</footer>
+
+</body>
+</html>
