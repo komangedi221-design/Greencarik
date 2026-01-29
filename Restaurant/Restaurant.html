@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Dining - Authentic Flavors in the Heart of the Jungle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER */
+    header {
+      position: absolute;
+      width: 100%;
+      padding: 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      z-index: 10;
+    }
+    nav a {
+      margin-left: 32px;
+      font-weight: 500;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      height: 70vh;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url('../foto/ChatGPT\ Image\ 29\ Jan\ 2026\,\ 17.54.27.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    .hero p { font-size: 18px; max-width: 720px; }
+
+    section { padding: 100px 60px; }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    /* INTRO */
+    .intro {
+      max-width: 900px;
+      margin: 0 auto 80px;
+      text-align: center;
+      color: #4b5563;
+      font-size: 18px;
+    }
+
+    /* MENU GRID */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+    .menu-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,.08);
+      transition: transform .4s ease, box-shadow .4s ease;
+    }
+    .menu-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 60px rgba(0,0,0,.15);
+    }
+    .menu-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .menu-content { padding: 24px; }
+    .menu-content h3 { margin-bottom: 8px; font-size: 20px; }
+    .menu-content p { font-size: 14px; color: #4b5563; }
+
+    /* AMBIENCE */
+    .ambience {
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+    .ambience img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+    .ambience h3 { font-size: 28px; margin-bottom: 16px; }
+    .ambience p { color: #4b5563; }
+
+    /* GALLERY */
+    .gallery {
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: transform .4s ease, box-shadow .4s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,.25);
+    }
+
+    /* CTA */
+    .cta {
+      background: #16a34a;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .cta a {
+      display: inline-block;
+      background: white;
+      color: #16a34a;
+      padding: 14px 36px;
+      border-radius: 999px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 60px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* ANIMATION */
+    .animate { opacity: 0; transform: translateY(40px); transition: 1s ease; }
+    .animate.show { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 768px) {
+      section { padding: 80px 20px; }
+      .hero h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+   <strong>GREEN CARIK </strong>
+  <nav>
+<a href="../Index.html">Home</a>
+<a href="../ziplinewahana/zipline.html">Adventure</a>
+<a href="Restaurant/Restaurant.html">Dining</a>
+<a href="../Gunungkawi/gunungkawi.html">Heritage</a>
+<a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Tropical Garden Dining</h1>
+    <p>Savor exquisite flavors amidst the tranquil whispers of nature and the lush greenery of the valley.</p>
+  </div>
+</section>
+
+<section>
+  <p class="intro animate">Our restaurant offers a unique farm-to-table experience, blending authentic local ingredients with world-class culinary techniques and breathtaking natural views.</p>
+
+  <h2 class="section-title animate">Chef's Recommendations</h2>
+  <div class="menu-grid animate">
+    <div class="menu-card">
+        <img src="../foto/foodmakanan.png" alt="Exotic Shawarma" />
+      <div class="menu-content">
+        <h3>Artisan Meat Pizza</h3>
+        <p>Experience the perfect crunch of our hand-stretched dough, topped with premium seasoned meat, fresh bell peppers, and melted mozzarella. A rustic delight baked to golden perfection.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <img src="../foto/makananfood.png" />
+      <div class="menu-content">
+        <h3>Crispy Chicken & Fries</h3>
+        <p>Tender, juicy chicken breast strips coated in a secret herb-infused batter and fried until crisp. Served with a side of crinkle-cut fries and our signature dipping sauce for the ultimate comfort meal.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <img src="../foto/makanan3.png" />
+      <div class="menu-content">
+        <h3>Golden Calamari Rings</h3>
+        <p>Lightly battered calamari rings, fried to a delicate crispness. This classic appetizer is served with a wedge of fresh lime to enhance the ocean’s natural flavors. Light, crunchy, and absolutely addictive..</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ambience animate">
+    <img src="../foto/ChatGPT Image 29 Jan 2026, 17.54.27.png" />
+    <div>
+      <h3>A Serene & Organic Vibe</h3>
+      <p>Escape the hustle and bustle. Our dining area is designed to integrate seamlessly with the jungle, providing a peaceful sanctuary for families and couples alike.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title animate" style="margin-top:120px">The Dining Experience</h2>
+  <div class="gallery animate">
+    <img src="../foto/foodmakanan.png" />
+    <img src="../foto/makananfood.png" />
+    <img src="../foto/makanan3.png" />
+    <img src="../foto/DSC04287.JPG" />
+    <img src="../foto/DSC04648 (1).JPG" />
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Looking for an Unforgettable Meal?</h2>
+  <p>Reserve your table now and indulge in a true tropical feast.</p>
+  <a href="https://wa.link/l0w2zs">Book a Table Now</a>
+</section>
+
+<footer>
+  © 2026 Green carik 
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('show');
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

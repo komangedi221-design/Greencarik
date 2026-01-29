@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gunung Kawi – Ancient Heritage & Spiritual Sanctuary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER */
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      box-shadow: none;
+      z-index: 100;
+    }
+
+    nav a {
+      margin-left: 28px;
+      font-weight: 500;
+      color: white;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: #16a34a;
+      transition: width .3s ease;
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
+    }
+
+    nav a.active {
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+      height: 75vh;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url('../foto/ChatGPT\ Image\ 29\ Jan\ 2026\,\ 15.34.09.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      margin-bottom: 16px;
+    }
+    .hero p { font-size: 18px; max-width: 760px; }
+
+    section { padding: 100px 60px; }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    /* STORY */
+    .story {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      color: #4b5563;
+      font-size: 17px;
+    }
+
+    /* EXPERIENCE */
+    .experience {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+    .exp-box {
+      background: white;
+      padding: 36px 28px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+      text-align: center;
+    }
+    .exp-box h4 { margin-bottom: 14px; }
+    .exp-box p { font-size: 14px; color: #4b5563; }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 60px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: transform .4s ease, box-shadow .4s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,.25);
+    }
+
+    /* CTA */
+    .cta {
+      background: #16a34a;
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+    .cta a {
+      display: inline-block;
+      background: white;
+      color: #16a34a;
+      padding: 14px 36px;
+      border-radius: 999px;
+      font-weight: 600;
+      margin-top: 22px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 60px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate {
+      opacity: 0;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 20px; }
+      section { padding: 80px 20px; }
+      .hero h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong style="font-size:20px;letter-spacing:.5px;color:white">GREEN CARIK </strong>
+  <nav>
+<a href="../Index.html">Home</a>
+<a href="../ziplinewahana/zipline.html">Adventure</a>
+<a href="../Restaurant/Restaurant.html">Dining</a>
+<a href="gunungkawi.html">Heritage</a>
+<a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="animate">
+    <h1>The Mystic Valley of Gunung Kawi</h1>
+    <p>A journey into ancient wisdom, profound tranquility, and the sacred echoes of Balinese heritage.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title animate">An Enduring Legacy of Sacred Grandeur</h2>
+  <p class="story animate">
+   Gunung Kawi is not merely a destination—it is a timeless expression of Bali’s royal and spiritual heritage. Carved gracefully into towering cliff faces centuries ago, this sacred complex stands as a silent witness to devotion, artistry, and reverence beyond time. As you descend into the valley, a profound sense of calm unfolds. Ancient stone shrines, flowing river waters, and lush green surroundings create a rare harmony between human craftsmanship and untouched nature—an atmosphere that must be felt, not explained.</strong>. 
+    <br><br>
+    Every step through this sacred valley invites you to witness the perfect harmony between human artistry, untouched nature, and the spiritual energy that has been preserved for nearly a millennium.
+  </p>
+
+  <div class="experience animate">
+    <div class="exp-box">
+      <h4>Monuments Carved in Eternity</h4>
+      <p>Majestic cliffside shrines, sculpted directly from solid rock, reflecting the elegance and power of ancient Balinese civilization.</p>
+    </div>
+    <div class="exp-box">
+      <h4>A Sanctuary for the Soul</h4>
+      <p>A sacred space for reflection, prayer, and inner stillness—where silence speaks louder than words..</p>
+    </div>
+    <div class="exp-box">
+      <h4>An Enchanting Natural Setting</h4>
+      <p>Surrounded by emerald rice terraces, misty air, and the gentle rhythm of the river below.</p>
+    </div>
+    <div class="exp-box">
+      <h4>Living Cultural Heritage</h4>
+      <p>Authentic Balinese rituals and traditions continue to thrive, preserving a spiritual legacy passed through generations.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title animate" style="margin-top:120px">A Sanctuary of Timeless Beauty</h2>
+  <p class="story animate" style="margin-bottom:50px">
+    Discover the silence, the grandeur, and the sacred vibrations of a site that has been guarded by the jungle for hundreds of years.
+  </p>
+  <div class="gallery animate">
+    <img src="../foto/t13.jpg" alt="Spiritual energy" />
+    <img src="../foto/t14.JPG" alt="Ancient carvings" />
+    <img src="../foto/t17.JPG" alt="Sacred valley" />
+    <img src="../foto/t18.JPG" alt="Balinese ritual" />
+      <img src="../foto/t21.JPG" alt="Balinese ritual" />
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Experience the Magic of Gunung Kawi</h2>
+  <p>Complete your Balinese journey with a fusion of history, spirituality, and breathtaking nature.</p>
+  <a href="https://wa.link/l0w2zs">Plan Your Pilgrimage</a>
+</section>
+
+<footer>
+  © 2026 green carik
+</footer>
+
+</body>
+</html>

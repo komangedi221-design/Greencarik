@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zipline & Jungle Swing - Adrenaline Meets Paradise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER */
+    header {
+      position: absolute;
+      width: 100%;
+      padding: 24px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      z-index: 10;
+    }
+    nav a {
+      margin-left: 32px;
+      font-weight: 500;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      height: 70vh;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url('../foto/IMG_4198.JPG') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    .hero p { font-size: 18px; max-width: 700px; }
+
+    /* SECTION */
+    section { padding: 100px 60px; }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    /* WAHANA */
+    .wahana {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+    .wahana img {
+      width: 100%;
+      border-radius: 24px;
+      height: 360px;
+      object-fit: cover;
+    }
+    .wahana h3 { font-size: 28px; margin-bottom: 16px; }
+    .wahana p { color: #4b5563; margin-bottom: 24px; }
+    .badge {
+      display: inline-block;
+      background: #16a34a;
+      color: white;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    /* INFO GRID */
+    .info {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .info-box {
+      background: white;
+      padding: 32px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+      text-align: center;
+    }
+    .info-box h4 { margin-bottom: 12px; }
+    .info-box p { font-size: 14px; color: #4b5563; }
+
+    /* GALLERY */
+    .gallery-section { margin-top: 120px; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: transform .4s ease, box-shadow .4s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,.25);
+    }
+
+    /* CTA */
+    .cta {
+      background: #16a34a;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .cta a {
+      display: inline-block;
+      background: white;
+      color: #16a34a;
+      padding: 14px 36px;
+      border-radius: 999px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      padding: 60px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 20px; }
+      section { padding: 80px 20px; }
+      .hero h1 { font-size: 34px; }
+    }
+      /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animate {
+      opacity: 0;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .delay-1 { animation-delay: .2s; }
+    .delay-2 { animation-delay: .4s; }
+    .delay-3 { animation-delay: .6s; }
+
+    .hero h1, .hero p {
+      animation: fadeIn 1.2s ease forwards;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>GREEN CARIK </strong>
+  <nav>
+   <a href="../Index.html">Home</a>
+    <a href="ziplinewahana/zipline.html">Adventures</a>
+    <a href="../Restaurant/Restaurant.html">Dining</a>
+    <a href="../Gunungkawi/gunungkawi.html">Heritage</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="animate">
+    <h1>Zipline & Jungle Swing Adventure</h1>
+    <p>Feel the thrill of soaring high above the lush canopy with breathtaking panoramic views of Bali's untouched nature.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title animate">The Experience</h2>
+
+  <div class="wahana animate delay-1">
+    <img src="../foto/IMG_6325.JPG" />
+    <div>
+      
+      <h3>Zipline</h3>
+      <p>Experience the ultimate rush as you glide across the emerald valley. Our zipline combines high-speed excitement with world-class safety standards and professional guides.</p>
+    </div>
+  </div>
+
+  <div class="wahana" style="margin-top:80px">
+    <div>
+      <span class="badge">Instagrammable Spot</span>
+      <h3>Extreme Jungle Swing</h3>
+      <p>Swing into the clouds with the backdrop of misty mountains and ancient forests. Perfect for creating unforgettable memories and stunning visual content.</p>
+    </div>
+    <img src="../foto/35043F28-B097-4383-8579-5C0DF2E4FC65 (1).JPG" />
+  </div>
+
+  <div class="info animate delay-2">
+    <div class="info-box">
+      <h4>Safety First</h4>
+      <p>International standard gear & certified professional instructors</p>
+    </div>
+    <div class="info-box">
+      <h4>Duration</h4>
+      <p>Approx. 5–15 mins per session</p>
+    </div>
+    <div class="info-box">
+      <h4>Age Limit</h4>
+      <p>Suitable for ages 10 to 65</p>
+    </div>
+    <div class="info-box">
+      <h4>Location</h4>
+      <p>Heart of the Tropical Forest</p>
+    </div>
+  </div>
+  <div class="gallery-section animate delay-3">
+    <h2 class="section-title">Capturing the Moment</h2>
+    <p style="text-align:center;max-width:700px;margin:0 auto 40px;color:#4b5563;">
+      See the pure joy, adrenaline, and laughter of our guests as they embrace the thrill of the wild.
+    </p>
+    <div class="gallery">
+      <img src="../foto/IMG_4296.JPG" alt="Pure Joy" />
+      <img src="../foto/IMG_4211.JPG" alt="Swing Adventure" />
+      <img src="../foto/13fdbb94-d4c7-42d5-ada9-7da26ee26ace.JPG" alt="Nature Bliss" />
+      <img src="../foto/IMG_4198.JPG" alt="Zipline View" />
+      <img src="../foto/DSC04336 (1).JPG" alt="Guest Laughter" />
+      <img src="../foto/IMG_6347.JPG" alt="Group Fun" />
+      <img src="../foto/IMG_6325.JPG" alt="Group Fun" />
+      <img src="../foto/IMG_6337.JPG" alt="Group Fun" />
+      <img src="../foto/IMG_6059.JPG" alt="Group Fun" />
+      <img src="../foto/IMG_6075.JPG" alt="Group Fun" />
+      <img src="../foto/IMG_6221.JPG" alt="Group Fun" />
+      <img src="../foto/IMG_6209.JPG" alt="Group Fun" />
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Ready for the Thrill of a Lifetime?</h2>
+  <p>Book your spot now and let the adventure begin!</p>
+  <a href="https://wa.link/l0w2zs">Contact Us on WhatsApp</a>
+</section>
+
+<footer>
+  © 2026 Green carik 
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
